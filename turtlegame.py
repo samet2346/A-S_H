@@ -65,14 +65,17 @@ def rastgele_konum():
     y = random.randint(-270,270)
     return x,y
 
-
-def click_code(x,y):
+def click_code(x, y):
     global skor
-    skor +=1
-    skor_guncelle()
+    distance = gametu.distance(x, y)
+    if distance < 50 and gametu == window.turtles()[0]:  # Eğer tıklanan nokta kamplumbaga ile belirlenen bir mesafede ve sadece kamplumbagaysa
+        skor += 1
+        skor_guncelle()
+        yeni_konum = rastgele_konum()
+        gametu.goto(yeni_konum)
 
-    yeni_konum = rastgele_konum()
-    gametu.goto(yeni_konum)
+
+
 
 window.onscreenclick(click_code)
 
