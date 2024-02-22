@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    margin-top: 50px; /* Google resminin üstündeki boşluğu ayarla */
+    background-color: rgba(46, 6, 6, 0); /* Google arama sayfasının arka plan rengi */
+}
+
+#Google-photo {
+   margin-bottom: -30px;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+#searchbar {
+    border-radius: 20px;
+    width: 600px; /* Arama çubuğunun genişliğini ayarla */
+    height: 20px; /* Arama çubuğunun yüksekliğini ayarla */
+    font-size: 16px; /* Yazı boyutunu ayarla */
+    padding: 10px; /* İç boşluğu ayarla */
+}
+
+.button {
+    height: 40px; /* Düğme yüksekliğini ayarla */
+    font-size: 16px; /* Yazı boyutunu ayarla */
+    padding: 10px 20px; /* İç boşluğu ayarla */
+    margin: 5px; /* Düğmeler arasındaki boşluğu ayarla */
+}
